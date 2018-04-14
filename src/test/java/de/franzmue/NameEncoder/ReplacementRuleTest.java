@@ -1,6 +1,3 @@
-/**
- * 
- */
 package de.franzmue.NameEncoder;
 
 import de.franzmue.NameEncoder.ReplacementRule;
@@ -10,10 +7,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-/**
- * @author linux
- *
- */
 public class ReplacementRuleTest {
 	
 	private final static String EXAMPLE_REPLACEMENT_RULE = "ph";
