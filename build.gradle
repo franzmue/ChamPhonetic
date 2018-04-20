@@ -11,6 +11,7 @@ plugins {
 }
  
 version = '1.0.0'
+sourceCompatibility = 9
 
 dependencies {
     testImplementation 'junit:junit:4.12'
