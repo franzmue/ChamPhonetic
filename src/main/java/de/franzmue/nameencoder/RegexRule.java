@@ -1,8 +1,8 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.Rule;
+package de.franzmue.nameencoder;
 
 import java.util.regex.Pattern;
+
+import de.franzmue.nameencoder.Rule;
 
 /**
  * A rule describing the matching of a string against a regular expression and replacing it.

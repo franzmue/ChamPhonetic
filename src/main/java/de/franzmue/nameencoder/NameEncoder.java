@@ -1,9 +1,4 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.Rules;
-import de.franzmue.NameEncoder.Rule;
-import de.franzmue.NameEncoder.RegexRule;
-import de.franzmue.NameEncoder.NameEncoderInterface;
+package de.franzmue.nameencoder;
 
 import java.util.Locale;
 import java.util.Collections;
@@ -12,13 +7,18 @@ import java.util.Objects;
 import java.util.ArrayList;
 import java.util.function.Supplier;
 
+import de.franzmue.nameencoder.NameEncoderInterface;
+import de.franzmue.nameencoder.RegexRule;
+import de.franzmue.nameencoder.Rule;
+import de.franzmue.nameencoder.Rules;
+
 /**
  * The NameEncoder class contains all methods to do the encoding of a word of data type String.
  * However the rules of a concrete encoding algorithm are not part of this class.
  * <p>
  * The intended use is to create a subclass of the NameEncoder class and add the rules in the subclass.
- * Examples are the {@link de.franzmue.NameEncoder.GermanNameEncoder} and
- * {@link de.franzmue.NameEncoder.ExtendedGermanNameEncoder} classes. The encoding is then done
+ * Examples are the {@link de.franzmue.nameencoder.GermanNameEncoder} and
+ * {@link de.franzmue.nameencoder.ExtendedGermanNameEncoder} classes. The encoding is then done
  * by calling the appropriate methods of a subclass object.
  * </p><p>
  * The rules are organised in layers. The ordering of the given layers are preserved.
@@ -77,7 +77,7 @@ public class NameEncoder implements NameEncoderInterface {
 	}
 
   /**
-   * @see de.franzmue.NameEncoder.NameEncoderInterface#isEncodeEqual(String, String)
+   * @see de.franzmue.nameencoder.NameEncoderInterface#isEncodeEqual(String, String)
    */
   public boolean isEncodeEqual(final String word1, final String word2) {
   	String code1 = encode(word1).getCode();
@@ -87,14 +87,14 @@ public class NameEncoder implements NameEncoderInterface {
   }
   
   /**
-   * @see de.franzmue.NameEncoder.NameEncoderInterface#getEncodedName(String)
+   * @see de.franzmue.nameencoder.NameEncoderInterface#getEncodedName(String)
    */
   public synchronized String getEncodedName(String word) {
   	return encode(word).getCode();
   }
 
   /**
-   * @see de.franzmue.NameEncoder.NameEncoderInterface#encode(String)
+   * @see de.franzmue.nameencoder.NameEncoderInterface#encode(String)
    */
 	public NameEncoder encode(String word) {
 		resetCodePath(word);
@@ -108,7 +108,7 @@ public class NameEncoder implements NameEncoderInterface {
 	}
 	
   /**
-   * @see de.franzmue.NameEncoder.NameEncoderInterface#getCode()
+   * @see de.franzmue.nameencoder.NameEncoderInterface#getCode()
    */
 	public String getCode() {
 		if (codePath == null)
@@ -118,7 +118,7 @@ public class NameEncoder implements NameEncoderInterface {
 	}
 	
   /**
-   * @see de.franzmue.NameEncoder.NameEncoderInterface#getCodePath()
+   * @see de.franzmue.nameencoder.NameEncoderInterface#getCodePath()
    */
 	public List<String> getCodePath() {
 		if (codePath == null)

@@ -1,12 +1,13 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.Rule;
-import de.franzmue.NameEncoder.RegexRule;
-import de.franzmue.NameEncoder.ReplacementRule;
+package de.franzmue.nameencoder;
 
 import java.util.Iterator;
 import java.util.Collections;
 import java.util.List;
+
+import de.franzmue.nameencoder.RegexRule;
+import de.franzmue.nameencoder.ReplacementRule;
+import de.franzmue.nameencoder.Rule;
+
 import java.util.ArrayList;
 
 /**

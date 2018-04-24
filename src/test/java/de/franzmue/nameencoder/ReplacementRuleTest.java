@@ -1,11 +1,12 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.ReplacementRule;
+package de.franzmue.nameencoder;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import de.franzmue.nameencoder.ReplacementRule;
+import de.franzmue.nameencoder.Rule;
 
 public class ReplacementRuleTest {
 	

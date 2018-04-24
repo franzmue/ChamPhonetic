@@ -1,6 +1,4 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.ExtendedGermanNameEncoder;
+package de.franzmue.nameencoder;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
@@ -11,6 +9,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import de.franzmue.nameencoder.ExtendedGermanNameEncoder;
 
 public class ExtendedGermanNameEncoderTest {
 	

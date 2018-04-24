@@ -1,6 +1,6 @@
-package de.franzmue.NameEncoder;
+package de.franzmue.nameencoder;
 
-import de.franzmue.NameEncoder.Rule;
+import de.franzmue.nameencoder.Rule;
 
 /**
  * A rule describing the replacement of a substring by another string.

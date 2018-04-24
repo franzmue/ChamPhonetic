@@ -1,9 +1,4 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.Rule;
-import de.franzmue.NameEncoder.Rules;
-import de.franzmue.NameEncoder.RegexRule;
-import de.franzmue.NameEncoder.ReplacementRule;
+package de.franzmue.nameencoder;
 
 import static org.junit.Assert.fail;
 import static org.junit.Assert.assertFalse;
@@ -12,6 +7,11 @@ import static org.junit.Assert.assertEquals;
 import java.util.Iterator;
 
 import org.junit.Test;
+
+import de.franzmue.nameencoder.RegexRule;
+import de.franzmue.nameencoder.ReplacementRule;
+import de.franzmue.nameencoder.Rule;
+import de.franzmue.nameencoder.Rules;
 
 public class RulesTest {
 

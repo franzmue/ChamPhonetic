@@ -1,8 +1,8 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.NameEncoder;
+package de.franzmue.nameencoder;
 
 import java.util.List;
+
+import de.franzmue.nameencoder.NameEncoder;
 
 /**
  * Defines how the NameEncoder Java 9 library can be used.

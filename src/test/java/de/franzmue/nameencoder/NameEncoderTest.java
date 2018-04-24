@@ -1,6 +1,4 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.NameEncoder;
+package de.franzmue.nameencoder;
 
 import static org.junit.Assert.*;
 
@@ -11,6 +9,8 @@ import java.util.Locale;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import de.franzmue.nameencoder.NameEncoder;
 
 public class NameEncoderTest {
 	

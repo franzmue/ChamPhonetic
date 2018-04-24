@@ -1,6 +1,4 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.RegexRule;
+package de.franzmue.nameencoder;
 
 import java.util.regex.Pattern;
 
@@ -8,6 +6,9 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import de.franzmue.nameencoder.RegexRule;
+import de.franzmue.nameencoder.Rule;
 
 public class RegexRuleTest {
 	

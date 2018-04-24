@@ -1,6 +1,4 @@
-package de.franzmue.NameEncoder;
-
-import de.franzmue.NameEncoder.ExtendedGermanNameEncoder;
+package de.franzmue.nameencoder;
 
 import java.util.Arrays;
 
@@ -11,6 +9,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
+
+import de.franzmue.nameencoder.ExtendedGermanNameEncoder;
 
 @RunWith(Parameterized.class)
 public class ExtendedGermanNamesEncoderTest {

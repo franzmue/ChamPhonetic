@@ -1,4 +1,4 @@
-package de.franzmue.NameEncoder;
+package de.franzmue.nameencoder;
 
 import java.util.Objects;
 import java.util.regex.Pattern;

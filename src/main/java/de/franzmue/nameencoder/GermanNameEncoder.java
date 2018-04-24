@@ -1,13 +1,13 @@
-package de.franzmue.NameEncoder;
+package de.franzmue.nameencoder;
 
 import java.util.function.Supplier;
 
-import de.franzmue.NameEncoder.NameEncoder;
+import de.franzmue.nameencoder.NameEncoder;
 
 /**
  * Add rules the the NameEncoder class in order to be able to find similar German family names.
  * 
- * @see de.franzmue.NameEncoder.NameEncoder
+ * @see de.franzmue.nameencoder.NameEncoder
  * @author Franz Muehlbauer, info@franz-mue.de
  */
 public class GermanNameEncoder extends NameEncoder {

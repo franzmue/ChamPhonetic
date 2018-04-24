@@ -8,7 +8,7 @@ Names are considered equal if the same encoding is calculated from their names.
 ### Encode a name
 
 ```
-import de.franzmue.NameEncoder.GermanNameEncoder;
+import de.franzmue.nameencoder.GermanNameEncoder;
 
 GermanNameEncoder encoder = new GermanNameEncoder();
 
@@ -20,7 +20,7 @@ String code = encoder.encode(word).getCode();
 If thread safety is required use the synchronized method `getEncodedName` instead:
 
 ```
-import de.franzmue.NameEncoder.GermanNameEncoder;
+import de.franzmue.nameencoder.GermanNameEncoder;
 
 GermanNameEncoder encoder = new GermanNameEncoder();
 
@@ -32,7 +32,7 @@ String code = encoder.getEncodedName(word);
 To get more insights of the encoding process (i. e. intermediate code results) replace `getCode` by `getCodePath`:
 
 ```
-import de.franzmue.NameEncoder.GermanNameEncoder;
+import de.franzmue.nameencoder.GermanNameEncoder;
 import java.util.List;
 
 GermanNameEncoder encoder = new GermanNameEncoder();
@@ -47,7 +47,7 @@ It is also possible to encode a list of given names from command line (shell) by
 ### Compare two names
 
 ```
-import de.franzmue.NameEncoder.GermanNameEncoder;
+import de.franzmue.nameencoder.GermanNameEncoder;
 
 GermanNameEncoder encoder = new GermanNameEncoder();
 
@@ -59,7 +59,7 @@ boolean areEqual = encoder.isEncodeEqual(word1, word2);
 
 ### Add your own rules or create your own encoder
 
-See the [NameEncoder](src/main/java/de/franzmue/NameEncoder/NameEncoder.java) class documentation for more information.
+See the [NameEncoder](src/main/java/de/franzmue/nameencoder/NameEncoder.java) class documentation for more information.
 
 ## Background
 
